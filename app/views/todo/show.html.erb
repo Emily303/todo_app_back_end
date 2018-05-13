@@ -1,17 +1,10 @@
-<html>
-    <head>
-        <title> To-Do List application</title>
-    </head>
-    <body>
+
       <div>
         <input type="checkbox"/> 
-        <h2><%=@todo_description %> </h2>
-        <spon><%=@todo_pomodoro_estimate %>Pomodoros </spon>
-        </h2>
+        <h2><%= @todo.description %> </h2>
+        <span><%=@todo.pomodoro_estimate %>Pomodoros </span>
         <a href="#"> Edit </a>
         <a href="#"> Delete </a>
         <a href="/todo/index"
-        > Go Back </a>
-        </div>
-    </body>
-</html>
+        <a href="/" class="simple-link">Go Back...</a>
+      </div>
