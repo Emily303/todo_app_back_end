@@ -5,6 +5,7 @@ class TodoController < ApplicationController
     end
     
     def show
+        # Get the number the user typed in URL
         todo_id = params[:id]
         if todo_id == 1
             @todo_description = "Make the curriculum"
